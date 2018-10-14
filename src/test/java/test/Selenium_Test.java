@@ -55,10 +55,10 @@ public class Selenium_Test extends testPageObjectModel{
 		{
 			wait.until(isClickableById("ap_email"));
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
-			findById("ap_email").sendKeys("gurcanserttas@gmail.com");//Please enter the mail address
+			findById("ap_email").sendKeys("seleniumtestcasejava@gmail.com");//Please enter the mail address
 			findById("continue").click();
 			wait.until(isClickableById("ap_password"));
-			findById("ap_password").sendKeys("Amazon1.");//Please enter the password
+			findById("ap_password").sendKeys("123456");//Please enter the password
 			findById("signInSubmit").click(); //login button
 			System.out.println("Kullanıcı Girişi Başarılı ");
 			
